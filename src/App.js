@@ -1,48 +1,37 @@
 import { useState } from "react";
-import { PHOTO_COLLECTION } from "./data";
+import photoCollection from "./data";
 
 function App() {
-  const [photos, setPhotos] = useState('');
+
+  const [filter, setFilter] = useState('all')
 
 
-function handleChangePhotos(chosenCategory){
-  setPhotos(prevImg => {
-    return {
-      // add mapping or filter logic here.
-    };
-  });
-}
+const filteredPhotos = filter === "all" ? photoCollection : photoCollection.filter(photo => photo.category.includes(filter))
 
 
 
   return (
     <div>
       <nav>
-        {/* Header */}
         <h1>DAN FINLEY PHOTO</h1>
-        {/* Links/filter to photos filters by category*/}
         <ul>
-          <li>#ALL</li>
-          <button onClick={() => handleChangePhotos('landscape')}>#LANDSCAPE</button>
-          <button onClick={() => handleChangePhotos('portrait')}>#PORTRAIT</button>
-          <li>#ABSTRACT</li>
-          <li>#LARGE_FORMAT</li>
-          <li>#B&W</li>
-          <li>#COLOR</li>
-          <li>#FILM</li>
-          <li>#DIGITAL</li>
-          <li>#ABOUT/CONTACT</li>
-        </ul>
+          {["all", "landscape", "portrait", "abstract", "4x5", "b&w", "color", "film", "digital", "cinematic"].map(category => (
+            <li key={category}>
+              <button onClick={() => setFilter(category)} style={{ color: filter === category ? 'gray' : 'orange' }}>
+                #{category}
+              </button>
+            </li>
+          ))}
+          <li><a href='about.html'>#about</a></li>
+        </ul>        
       </nav>
 
       <hr />
-      {photos}
+    
       <main>
-        {/* Modal Gallery of filtered photos */}
-        {/* Array of photos - Object with img and several categories*/}
-        {PHOTO_COLLECTION.map((image) => (
-          <img key={image.id} src={image.url} className="thumbnail" alt={image.description}/>
-        ))}
+          {filteredPhotos.map((image) => (
+            <img key={image.id} src={image.url} className="thumbnail" alt={image.description} />
+          ))}
       </main>
       
       <footer>
