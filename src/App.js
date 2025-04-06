@@ -29,6 +29,7 @@ const filteredPhotos = filter === "all" ? photoCollection : photoCollection.filt
       <hr />
     
       <main>
+        <h2>{filter}</h2>
           {filteredPhotos.map((image) => (
             <img key={image.id} src={image.url} className="thumbnail" alt={image.description} />
           ))}
