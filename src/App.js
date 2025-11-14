@@ -1,5 +1,6 @@
 import { useState } from "react";
 import photoCollection from "./data";
+import 'bootstrap'
 
 function App() {
 
