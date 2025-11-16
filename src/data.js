@@ -261,7 +261,7 @@ const photoCollection = [
   {
     id: 38,
     title: "Harry",
-    url: "img/Harryenvironmental Portrait_Web.jpg",
+    url: "img/HarryPortrait_Web.jpg",
     category: ["digital", "color", "environmental portrait"],
     description: "This is the description.",
   },

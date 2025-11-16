@@ -13,18 +13,21 @@ function App() {
     "environmental portrait",
     "cinematic portrait",
     "studio portrait",
+    "street",
     "fashion",
     "landscape",
     "abstract",
     "product",
     "medical",
+    "retouching",
     "4x5",
     "b&w",
     "color",
     "film",
     "digital",
   ];
-
+//TODO: add descriptions to photos
+//TODO: Add fashion, medical, abstract, product, retouching, street photos
   // Filtered photos based on current filter
   const filteredPhotos =
     filter === "all"
@@ -46,7 +49,7 @@ function App() {
     <div>
       {/* Navigation / Filter */}
       <nav>
-        <h1>DAN FINLEY PHOTO</h1>
+        <h1><a href="#">DAN FINLEY PHOTO</a></h1>
         <ul id="filterlist">
           {categories.map((category) => (
             <li key={category}>
