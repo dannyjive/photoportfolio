@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import photoCollection from "./data";
 import { Carousel, Modal } from "react-bootstrap";
+import Nav from "./components/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -20,14 +21,15 @@ function App() {
     "product",
     "medical",
     "retouching",
+    "motion",
     "4x5",
     "b&w",
     "color",
     "film",
     "digital",
   ];
-//TODO: add descriptions to photos
-//TODO: Add fashion, medical, abstract, product, retouching, street photos
+  //TODO: add descriptions to photos
+  //TODO: Add fashion, medical, abstract, product, retouching, street photos
   // Filtered photos based on current filter
   const filteredPhotos =
     filter === "all"
@@ -48,21 +50,8 @@ function App() {
   return (
     <div>
       {/* Navigation / Filter */}
-      <nav>
-        <h1><a href="#">DAN FINLEY PHOTO</a></h1>
-        <ul id="filterlist">
-          {categories.map((category) => (
-            <li key={category}>
-              <button onClick={() => setFilter(category)}>#{category}</button>
-            </li>
-          ))}
-          <li>
-            <button>
-              <a href="about.html">#about</a>
-            </button>
-          </li>
-        </ul>
-      </nav>
+      
+      <Nav categories={categories} onSelectCategory={setFilter} />
 
       <hr />
 
