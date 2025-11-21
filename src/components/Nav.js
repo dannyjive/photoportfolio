@@ -22,9 +22,7 @@ const Nav = ({ categories, onSelectCategory }) => {
             </li>
           );
         })}
-        <li>
-          <button>#about</button>
-        </li>
+
       </ul>
     </nav>
   );

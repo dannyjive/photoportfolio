@@ -28,6 +28,8 @@ function App() {
     "color",
     "film",
     "digital",
+    "separator",
+    "about",
   ];
   //TODO: add descriptions to photos
   //TODO: Add fashion, medical, abstract, product, retouching, street photos
@@ -51,14 +53,14 @@ function App() {
   return (
     <div>
       {/* Navigation / Filter */}
-      
-      <Nav categories={categories} onSelectCategory={setFilter} />
 
- 
+      <Nav categories={categories} onSelectCategory={setFilter} />
 
       <main>
         {/* Thumbnails */}
-        <hr/><h2>{filter}</h2><hr/>
+        <hr />
+        <h2>{filter}</h2>
+        <hr />
         <div className="row">
           <div className="column">
             {filteredPhotos.map((image, index) => (
