@@ -11,6 +11,7 @@ function App() {
 
   const categories = [
     "all",
+    "separator",
     "environmental portrait",
     "cinematic portrait",
     "studio portrait",
@@ -18,10 +19,10 @@ function App() {
     "fashion",
     "landscape",
     "abstract",
-    "product",
     "medical",
     "retouching",
     "motion",
+    "separator",
     "4x5",
     "b&w",
     "color",
@@ -53,11 +54,11 @@ function App() {
       
       <Nav categories={categories} onSelectCategory={setFilter} />
 
-      <hr />
+ 
 
       <main>
         {/* Thumbnails */}
-        <h2>{filter}</h2>
+        <hr/><h2>{filter}</h2><hr/>
         <div className="row">
           <div className="column">
             {filteredPhotos.map((image, index) => (

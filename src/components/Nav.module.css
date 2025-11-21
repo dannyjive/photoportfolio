@@ -1,8 +1,82 @@
-.nav {
-    background: blue;
-    color: green;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
 }
 
-.h1 {
-    color: orange;
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.hline {
+  display: block;
+  margin: 0;
+  line-height: 1;
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--brand-color);
+}
+a {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 500px;
+  justify-content: right;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+}
+
+li.separator {
+  flex-basis: 100%;
+  border-bottom: 0px solid #707070;
+  width: 50%;
+  margin: 0rem 0;
+  height: 0;
+  padding: 0;
+  align-self: stretch;
+}
+
+li.separator::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  margin: 0 0 0 auto;
+  background: linear-gradient(to right, #505050, #282828);
+}
+
+ul li:not(.separator) {
+  text-align: right;
+  flex-basis: auto;
+}
+
+button {
+  color: var(--brand-color);
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
+
+button:hover {
+  color: #ffffff;
 }
