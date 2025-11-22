@@ -1,5 +1,4 @@
-
-TODO: Is this body font right?
+/* TODO: Is this body font right?  */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -14,14 +13,11 @@ body {
   border-style: solid;
   border-width: 1px; */
   background-color: #505050;
-  font-family: 'Koulen', sans-serif;
+  font-family: "Koulen", sans-serif;
 }
 
-
-
-
 :root {
-  --brand-color: #EEC82F;
+  --brand-color: #eec82f;
 }
 
 code {
@@ -29,8 +25,43 @@ code {
     monospace;
 }
 
-.thumbnail {
-  width: 100px;
+.headlineContainer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.headline {
+  width: 35%;
+  margin: 50px auto;
+  border: none;
+  height: 8px;
+  background-color: var(--brand-color);
+  opacity: 1;
+}
+
+h2 {
+  color: var(--brand-color) !important;
+}
+
+.masonry-columns {
+  column-count: 3;
+  column-gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.masonry-item .thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 button {

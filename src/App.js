@@ -12,9 +12,9 @@ function App() {
   const categories = [
     "all",
     "separator",
-    "environmental portrait",
-    "cinematic portrait",
-    "studio portrait",
+    "environmental",
+    "cinematic",
+    "studio",
     "street",
     "fashion",
     "landscape",
@@ -57,26 +57,28 @@ function App() {
       <Nav categories={categories} onSelectCategory={setFilter} />
 
       <main>
+        {/* Filter Headline */}
+        <div className="headlineContainer">
+          <hr className="headline" />
+          <h2>{filter}</h2>
+          <hr className="headline" />
+        </div>
+
         {/* Thumbnails */}
-        <hr />
-        <h2>{filter}</h2>
-        <hr />
-        <div className="row">
-          <div className="column">
-            {filteredPhotos.map((image, index) => (
-              <div
-                key={image.id}
-                className="card-body"
-                onClick={() => openModal(index)}
-              >
-                <img
-                  src={image.url}
-                  className="thumbnail"
-                  alt={image.description}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="masonry-columns">
+          {filteredPhotos.map((image, index) => (
+            <div
+              key={image.id}
+              className="masonry-item"
+              onClick={() => openModal(index)}
+            >
+              <img
+                src={image.url}
+                className="thumbnail"
+                alt={image.description}
+              />
+            </div>
+          ))}
         </div>
 
         {/* Modal + Carousel */}
