@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import photoCollection from "./data";
 import { Carousel, Modal } from "react-bootstrap";
 import Nav from "./components/Nav";
+import Masonry from "react-masonry-css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -31,29 +32,35 @@ function App() {
     "separator",
     "about",
   ];
-  //TODO: add descriptions to photos
-  //TODO: Add fashion, medical, abstract, product, retouching, street photos
-  // Filtered photos based on current filter
+
+  // Filter photos based on current filter
   const filteredPhotos =
     filter === "all"
       ? photoCollection
       : photoCollection.filter((photo) => photo.category.includes(filter));
 
-  // Reset activeIndex whenever filter changes
+  // Reset activeIndex when filter changes
   useEffect(() => {
     setActiveIndex(0);
   }, [filter]);
 
   // Open modal at a given filtered index
-  const openModal = (filteredIndex) => {
-    setActiveIndex(filteredIndex);
+  const openModal = (index) => {
+    setActiveIndex(index);
     setShowModal(true);
+  };
+
+  // Masonry responsive breakpoints
+  const breakpointColumnsObj = {
+    default: 3,
+    1100: 3,
+    700: 2,
+    500: 1,
   };
 
   return (
     <div>
       {/* Navigation / Filter */}
-
       <Nav categories={categories} onSelectCategory={setFilter} />
 
       <main>
@@ -64,8 +71,12 @@ function App() {
           <hr className="headline" />
         </div>
 
-        {/* Thumbnails */}
-        <div className="masonry-columns">
+        {/* Masonry Thumbnails */}
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="masonry-grid"
+          columnClassName="masonry-grid_column"
+        >
           {filteredPhotos.map((image, index) => (
             <div
               key={image.id}
@@ -79,7 +90,7 @@ function App() {
               />
             </div>
           ))}
-        </div>
+        </Masonry>
 
         {/* Modal + Carousel */}
         <Modal
