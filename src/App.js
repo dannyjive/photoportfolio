@@ -72,6 +72,7 @@ function App() {
         </div>
 
         {/* Masonry Thumbnails */}
+        <div className='gallery-wrapper'>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="masonry-grid"
@@ -91,6 +92,7 @@ function App() {
             </div>
           ))}
         </Masonry>
+        </div>
 
         {/* Modal + Carousel */}
         <Modal
@@ -109,7 +111,7 @@ function App() {
               {filteredPhotos.map((image) => (
                 <Carousel.Item key={image.id}>
                   <img
-                    className="d-block w-100"
+                    className="carousel-img"
                     src={image.url}
                     alt={image.title}
                   />

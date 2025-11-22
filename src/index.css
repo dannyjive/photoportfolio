@@ -25,7 +25,7 @@ body {
    ----------------------------- */
 .headlineContainer {
   display: flex;
-  align-items: center;
+  align-items: bottom;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
@@ -34,7 +34,7 @@ body {
 }
 
 .headline {
-  flex: 1 1 200px; /* scales nicely */
+  flex: 1 1 200px; 
   max-width: 35%;
   height: 8px;
   background-color: var(--brand-color);
@@ -56,7 +56,7 @@ h2 {
   display: flex;
   margin-left: calc(-1 * var(--gutter));
   width: auto;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .masonry-grid_column {
@@ -77,6 +77,15 @@ h2 {
   border-radius: 4px;
   object-fit: cover;
 }
+
+.gallery-wrapper {
+  width: 85vw;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+
+
 
 /* Hover effect */
 .masonry-item:hover {
@@ -105,14 +114,15 @@ h2 {
 }
 
 /* Carousel images */
+
 .modal-body .carousel-item img,
-.modal-body .d-block {
+.modal-body {
   max-height: 85vh;
-  width: auto !important;
-  height: auto;
+   width: 100%;
+ height: 85vh;
   object-fit: contain;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 /* Remove borders/outlines */
