@@ -1,23 +1,23 @@
-/* TODO: Is this body font right?  */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --brand-color: #eec82f;
 }
 
 * {
   /* border: red;
   border-style: solid;
   border-width: 1px; */
-  background-color: #505050;
   font-family: "Koulen", sans-serif;
 }
 
-:root {
-  --brand-color: #eec82f;
+/* TODO: Is this body font right?  */
+html, body {
+  background-color: #505050 !important;
+  /* margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
@@ -62,6 +62,66 @@ h2 {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.modal-content,
+.modal-body {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  opacity: 1 !important;
+}
+
+.modal-dialog {
+  margin: 0;
+}
+
+
+
+
+/* 1. CORE IMAGE SIZING & ASPECT RATIO (Corrected Selector) */
+/* Targets images in the modal carousel body */
+.modal-body .carousel-item img,
+.modal-body .d-block {
+  max-height: 85vh;
+  height: auto;
+  width: auto !important; /* Forces proportional width */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 2. REMOVE BORDERS AND OUTLINES ON ALL RELEVANT ELEMENTS */
+/* Targets the modal body, the images, and the carousel item wrappers */
+.modal-body,
+.modal-body img,
+.modal-body .carousel-item {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 0 !important; /* Removes modal body padding */
+}
+
+/* 3. TARGET FOCUS AND ACTIVE STATES (Most likely source of the line) */
+.modal-body .carousel-item:focus,
+.modal-body .carousel-item.active,
+.modal-body .carousel-item.active img {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 4. TARGET CONTROLS (Prevents line appearing on button focus) */
+.carousel-control-prev:focus,
+.carousel-control-next:focus,
+.carousel-indicators button:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 button {
