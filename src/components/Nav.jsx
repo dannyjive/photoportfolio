@@ -48,7 +48,7 @@ const Nav = () => {
             if (category === "about") {
               return (
                 <li key={category}>
-                  <Link to="/about" role="button" className={styles.filterLink}>
+                  <Link to="/about" role="button" className={styles.filterLink} onClick={() => setFilter(category)}>
                     #{category}
                   </Link>
                 </li>
@@ -61,6 +61,7 @@ const Nav = () => {
                     to="/motion"
                     role="button"
                     className={styles.filterLink}
+                    onClick={() => setFilter(category)}
                   >
                     #{category}
                   </Link>

@@ -1,0 +1,22 @@
+.headshot {
+  max-width: 250px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.socialItem span {
+  font-size: 0.95rem;
+}
+
+.link {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+.link:hover {
+  color: #0056b3;
+}

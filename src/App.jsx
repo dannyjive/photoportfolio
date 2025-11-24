@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./components/Gallery";
-import Motion from "./components/Motion";
+import Motion from "./pages/Motion";
 import { FilterProvider } from './context/FilterContext';
 import "bootstrap/dist/css/bootstrap.min.css";
 
