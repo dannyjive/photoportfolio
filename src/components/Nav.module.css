@@ -46,8 +46,7 @@ li {
   margin: 0;
   padding: 0;
   line-height: 0.8;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 18px;
+  
 }
 
 li.separator {
@@ -74,13 +73,15 @@ ul li:not(.separator) {
   flex-basis: auto;
 }
 
-button {
+.filterLink {
   color: var(--brand-color);
   margin: 0;
   padding: 0;
   text-decoration: none !important;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
 }
 
-button:hover {
+.filterLink:hover {
   color: #ffffff;
 }
