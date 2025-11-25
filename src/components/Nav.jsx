@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useFilter } from "../context/FilterContext";
 import styles from "./Nav.module.css";
 
 const Nav = () => {
+  const location = useLocation();
   const { filter, setFilter } = useFilter();
 
   const categories = [
@@ -28,6 +29,12 @@ const Nav = () => {
     "about",
   ];
 
+  const headline = location.pathname.startsWith("/about")
+    ? "about"
+    : location.pathname.startsWith("/motion")
+    ? "motion"
+    : filter;
+
   return (
     <>
       <nav className={styles.nav}>
@@ -45,34 +52,42 @@ const Nav = () => {
                 <li key={`sep-${index}`} className={styles.separator}></li>
               );
             }
+
+            // About Page
             if (category === "about") {
               return (
                 <li key={category}>
-                  <Link to="/about" role="button" className={styles.filterLink} onClick={() => setFilter(category)}>
-                    #{category}
-                  </Link>
-                </li>
-              );
-            }
-            if (category === "motion") {
-              return (
-                <li key={category}>
                   <Link
-                    to="/motion"
-                    role="button"
+                    to="/about"
                     className={styles.filterLink}
-                    onClick={() => setFilter(category)}
+                    onClick={() => setFilter("about")}
                   >
-                    #{category}
+                    #about
                   </Link>
                 </li>
               );
             }
 
+            // Motion Page
+            if (category === "motion") {
+              return (
+                <li key={category}>
+                  <Link
+                    to="/motion"
+                    className={styles.filterLink}
+                    onClick={() => setFilter("motion")}
+                  >
+                    #motion
+                  </Link>
+                </li>
+              );
+            }
+
+            // Gallery categories
             return (
               <li key={category}>
                 <Link
-                  to="/gallery"
+                  to={`/gallery/${category.toLowerCase()}`}
                   className={styles.filterLink}
                   onClick={() => setFilter(category)}
                 >
@@ -86,7 +101,7 @@ const Nav = () => {
 
       <div className="headlineContainer">
         <hr className="headline" />
-        <h2>{filter}</h2>
+        <h2>{headline}</h2>
         <hr className="headline" />
       </div>
     </>

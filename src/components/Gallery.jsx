@@ -3,32 +3,45 @@ import { useFilter } from "../context/FilterContext";
 import photoCollection from "../data";
 import { Carousel, Modal } from "react-bootstrap";
 import Masonry from "react-masonry-css";
+import { useParams } from "react-router-dom";
 
 export default function Gallery() {
-  // Get the current filter from context
-  const { filter } = useFilter();
+  const { filter: contextFilter, setFilter } = useFilter();
+  const { filter: urlFilter } = useParams();
+
+  // normalize
+  const activeFilter = (urlFilter || "all").toLowerCase();
+
+  // sync context with URL
+  useEffect(() => {
+    setFilter(activeFilter);
+  }, [activeFilter, setFilter]);
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
-  // Filter photos based on the selected category
+  // Filter photos
   const filteredPhotos =
-    filter === "all"
+    activeFilter === "all"
       ? photoCollection
-      : photoCollection.filter((photo) => photo.category.includes(filter));
+      : photoCollection.filter((photo) => {
+          const category = Array.isArray(photo.category)
+            ? photo.category.map((c) => c.toLowerCase())
+            : [photo.category.toLowerCase()];
 
-  // Reset activeIndex whenever the filter changes
+          return category.includes(activeFilter.toLowerCase());
+        });
+
+  // Reset modal index on filter changes
   useEffect(() => {
     setActiveIndex(0);
-  }, [filter]);
+  }, [activeFilter]);
 
-  // Open modal and start carousel at clicked image index
   const openModal = (index) => {
     setActiveIndex(index);
     setShowModal(true);
   };
 
-  // Masonry responsive breakpoints
   const breakpointColumnsObj = {
     default: 3,
     1100: 3,
@@ -39,7 +52,6 @@ export default function Gallery() {
   return (
     <div className="gallery-wrapper">
 
-      {/* Masonry Thumbnails */}
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="masonry-grid"
@@ -60,7 +72,6 @@ export default function Gallery() {
         ))}
       </Masonry>
 
-      {/* Modal + Carousel */}
       <Modal
         show={showModal}
         onHide={() => setShowModal(false)}

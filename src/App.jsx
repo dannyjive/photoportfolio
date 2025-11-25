@@ -14,10 +14,10 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Gallery />} />
+          <Route path="/gallery/:filter" element={<Gallery />} />
           <Route path="/about" element={<About />} />
-          <Route path="/gallery" element={<Gallery />} />\
-          <Route path="/motion" element={<Motion />} />\
+          <Route path="/motion" element={<Motion />} />
         </Routes>
       </main>
 
