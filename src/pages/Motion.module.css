@@ -1,0 +1,17 @@
+.video {
+  position: relative;
+  width: 85vw;
+  margin: 40px auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.videoFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

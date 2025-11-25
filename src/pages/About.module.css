@@ -1,22 +1,88 @@
+/* Outer container */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Card */
+.card {
+  max-width: 85vw;
+  width: 100%;
+}
+
+
+
+/* Title */
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Grid layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Portrait column */
+.colImage {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .colImage {
+    flex: 0 0 33%;
+  }
+}
+
+/* Bio column */
+.colText {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .colText {
+    flex: 0 0 67%;
+    padding-left: 1.5rem;
+  }
+}
+
+/* Portrait */
 .headshot {
-  max-width: 250px;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
-
-.socialItem span {
-  font-size: 0.95rem;
-}
-
+/* Links */
 .link {
-  text-decoration: underline;
-  color: #007bff;
+  color: #eec82f;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .link:hover {
-  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Social list */
+.socialList {
+  margin-top: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.socialItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.5rem;
 }
