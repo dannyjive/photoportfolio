@@ -1,4 +1,4 @@
-import { Card } from "react-bootstrap";
+
 import styles from "./Motion.module.css";
 import Footer from "../components/Footer";
 

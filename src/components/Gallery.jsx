@@ -52,7 +52,6 @@ export default function Gallery() {
 
   return (
     <div className="gallery-wrapper">
-
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="masonry-grid"
@@ -98,7 +97,7 @@ export default function Gallery() {
           </Carousel>
         </Modal.Body>
       </Modal>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
