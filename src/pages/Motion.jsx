@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap";
 import styles from "./Motion.module.css";
+import Footer from "../components/Footer";
 
 export default function Motion() {
   return (
@@ -14,6 +15,7 @@ export default function Motion() {
           title="Dan Finley Director's Reel"
         ></iframe>
       </div>
+      <Footer/>
     </>
   );
 }

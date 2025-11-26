@@ -20,6 +20,11 @@ body {
   min-height: 100%;
 }
 
+/* Footer */
+.footerText {
+  color: var(--brand-color);
+}
+
 /* -----------------------------
    Headline / Filter
    ----------------------------- */
@@ -167,12 +172,24 @@ ul {
    ----------------------------- */
 @media (max-width: 700px) {
   .headlineContainer {
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0.5rem;
   }
 
-  h2 {
+  .headlineContainer .headline {
+    flex: 1;
+    height: 2px;
+    border: none;
+
+  }
+  
+  .headlineContainer h2 {
+    margin: 0;
     font-size: 1.25rem;
+    white-space: nowrap;
+    text-align: center;
   }
 
   .masonry-grid {

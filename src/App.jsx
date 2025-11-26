@@ -5,6 +5,9 @@ import About from "./pages/About";
 import Gallery from "./components/Gallery";
 import Motion from "./pages/Motion";
 import { FilterProvider } from './context/FilterContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {

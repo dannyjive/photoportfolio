@@ -1,88 +1,86 @@
-/* Outer container */
-.container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+/* ---------------------------------------------
+   Container + Global Text Styling (Scoped)
+---------------------------------------------- */
+.aboutContainer {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--brand-color);
 }
 
-/* Card */
-.card {
-  max-width: 85vw;
-  width: 100%;
+/* Apply the font + color to ALL text elements inside the container */
+.aboutContainer p,
+.aboutContainer h6,
+.aboutContainer span,
+.aboutContainer a,
+.aboutContainer figcaption {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--brand-color);
 }
 
-
-
-/* Title */
-.title {
-  text-align: center;
-  text-transform: uppercase;
+/* ---------------------------------------------
+   Card Styling (Safe + Scoped)
+---------------------------------------------- */
+.customCard {
+  background-color: #282828 !important;
+  border: none;
 }
 
-/* Grid layout */
-.row {
-  display: flex;
-  flex-wrap: wrap;
+/* Bootstrap internally uses .card-body which defaults to white */
+.customCard .card-body {
+  background-color: #282828 !important;
 }
 
-/* Portrait column */
-.colImage {
-  flex: 0 0 100%;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 768px) {
-  .colImage {
-    flex: 0 0 33%;
-  }
-}
-
-/* Bio column */
-.colText {
-  flex: 0 0 100%;
-}
-
-@media (min-width: 768px) {
-  .colText {
-    flex: 0 0 67%;
-    padding-left: 1.5rem;
-  }
-}
-
-/* Portrait */
-.headshot {
-  width: 100%;
-  max-width: 260px;
-  margin: 0 auto;
-}
-
-/* Links */
-.link {
-  color: #eec82f;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.link:hover {
+/* ---------------------------------------------
+   Links (Scoped — avoid global overrides)
+---------------------------------------------- */
+.aboutContainer a {
+  color: var(--brand-color);
   text-decoration: underline;
 }
 
-/* Social list */
-.socialList {
-  margin-top: 2rem;
-  padding: 0;
-  list-style: none;
+.aboutContainer a:hover {
+  color: white; 
 }
 
-.socialItem {
+/* ---------------------------------------------
+   Figure Captions
+---------------------------------------------- */
+.figureCaption {
+  color: var(--brand-color);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.equip {
+  font-family: "Koulen", sans-serif !important;
+  font-size: 25px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.socialLinks {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  gap: 8px;
+  color: var(--brand-color);
+  text-decoration: none;
 }
 
-.icon {
-  width: 28px;
-  height: 28px;
-  margin-right: 0.5rem;
+.socialLinks:hover, .socialLinks:focus, .socialText:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+
+.socialLinks:hover img {
+  filter: brightness(1.3);
+  transition: filter 0.3s ease;
+
+}
+
+.socialLinks,
+.socialLinks:hover,
+.socialLinks:focus,
+.socialLinks:active {
+  text-decoration: none !important;
 }

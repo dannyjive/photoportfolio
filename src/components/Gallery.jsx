@@ -4,6 +4,7 @@ import photoCollection from "../data";
 import { Carousel, Modal } from "react-bootstrap";
 import Masonry from "react-masonry-css";
 import { useParams } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function Gallery() {
   const { filter: contextFilter, setFilter } = useFilter();
@@ -97,6 +98,7 @@ export default function Gallery() {
           </Carousel>
         </Modal.Body>
       </Modal>
+      <Footer/>
     </div>
   );
 }
