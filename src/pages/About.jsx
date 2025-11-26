@@ -13,7 +13,7 @@ export default function About() {
             {/* Portrait */}
             <Col md={4} className="text-center mb-3 mb-md-0">
               <Image
-                src="/img/dan_finley_portrait.jpg"
+                src="/img/About_dan_finley_portrait.jpg"
                 alt="Dan Finley Portrait"
                 fluid
               />
@@ -161,7 +161,7 @@ export default function About() {
             <Col sm={5} className="d-flex justify-content-center mb-3">
               <Figure>
                 <Figure.Image
-                  src="/img/LFcamera.jpg"
+                  src="/img/About_LFcamera.jpg"
                   alt="large format camera"
                   fluid
                   rounded
@@ -175,7 +175,7 @@ export default function About() {
             <Col sm={5} className="d-flex justify-content-center mb-3">
               <Figure>
                 <Figure.Image
-                  src="/img/HP5Film.jpg"
+                  src="/img/About_HP5Film.jpg"
                   alt="Ilford HP5 Film"
                   fluid
                   rounded

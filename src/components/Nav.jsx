@@ -23,7 +23,7 @@ const Nav = () => {
     "motion",
     "separator",
     "proj:cinematic",
-    "proj:glass",
+    "story:glassblower",
     "separator",
     "4x5",
     "b&w",
