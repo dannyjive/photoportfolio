@@ -1,3 +1,4 @@
+// TODO: get images under 800kb
 import { useState, useEffect } from "react";
 import { useFilter } from "../context/FilterContext";
 import photoCollection from "../data";
@@ -67,6 +68,7 @@ export default function Gallery() {
               src={image.url}
               className="thumbnail"
               alt={image.description}
+              loading="lazy"
             />
           </div>
         ))}
