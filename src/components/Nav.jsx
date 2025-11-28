@@ -81,6 +81,7 @@ const Nav = () => {
                     to="/motion"
                     className={styles.filterLink}
                     onClick={() => setFilter("motion")}
+                    loading='lazy'
                   >
                     #motion
                   </Link>

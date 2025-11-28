@@ -65,7 +65,7 @@ export default function Gallery() {
             onClick={() => openModal(index)}
           >
             <img
-              src={image.url}
+              src={image.thumb}
               className="thumbnail"
               alt={image.description}
               loading="lazy"
@@ -73,7 +73,7 @@ export default function Gallery() {
           </div>
         ))}
       </Masonry>
-
+{showModal && (
       <Modal
         show={showModal}
         onHide={() => setShowModal(false)}
@@ -91,14 +91,16 @@ export default function Gallery() {
               <Carousel.Item key={image.id}>
                 <img
                   className="carousel-img"
-                  src={image.url}
+                  src={image.full}
                   alt={image.title}
+                  loading="lazy"
                 />
               </Carousel.Item>
             ))}
           </Carousel>
         </Modal.Body>
       </Modal>
+)}
       <Footer />
     </div>
   );
