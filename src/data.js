@@ -1,7 +1,6 @@
 // TODO: must add description per photo
 
 const photoCollection = [
- 
   {
     id: 1,
     title: "Cast and Crew 3",
@@ -20,7 +19,7 @@ const photoCollection = [
   },
   {
     id: 3,
-    title: "Harry",
+    title: "Harry's Farm",
     full: "/img/Env_HarryPortrait_Web.jpg",
     thumb: "/img/thumb/Env_HarryPortrait_Web.avif",
     category: ["digital", "color", "environmental"],
@@ -36,7 +35,7 @@ const photoCollection = [
   },
   {
     id: 5,
-    title: "Montse",
+    title: "Montse 1",
     full: "/img/Env_Montse.avif",
     thumb: "/img/thumb/Env_Montse.avif",
     category: ["digital", "color", "environmental"],
@@ -52,7 +51,7 @@ const photoCollection = [
   },
   {
     id: 7,
-    title: "Music_Port_01",
+    title: "Obi Soulstar",
     full: "/img/Mus_Obi_Blur_Fin_700tag.jpg",
     thumb: "/img/thumb/Mus_Obi_Blur_Fin_700tag.avif",
     category: ["digital", "color", "music"],
@@ -91,9 +90,8 @@ const photoCollection = [
     description: "Music Portrait",
   },
 
-  // 
+  //
   {
-    
     id: 12,
     title: "Brennan",
     full: "/img/Env_Brennan.avif",
@@ -286,7 +284,7 @@ const photoCollection = [
     description: "This is the description.",
   },
   //
-  
+
   {
     id: 41,
     title: "Neko & Danasia",
@@ -1444,7 +1442,7 @@ const photoCollection = [
     title: "Korveil",
     full: "/img/Mus_Korveil.jpg",
     thumb: "/img/thumb/Mus_Korveil.avif",
-    category: ["digital", "color", "music", "studio"],
+    category: ["digital", "color", "music"],
     description: "Music Portrait",
   },
   {
@@ -1473,7 +1471,7 @@ const photoCollection = [
   },
   {
     id: 189,
-    title: "Music_Port_04",
+    title: "Selina",
     full: "/img/Mus_Selina_0452_tag.jpg",
     thumb: "/img/thumb/Mus_Selina_0452_tag.avif",
     category: ["digital", "color", "music"],
@@ -1481,7 +1479,7 @@ const photoCollection = [
   },
   {
     id: 190,
-    title: "Music_Port_05",
+    title: "FAN 1",
     full: "/img/Mus_FAN_341_W2WebTag.jpg",
     thumb: "/img/thumb/Mus_FAN_341_W2WebTag.avif",
     category: ["digital", "color", "music"],
@@ -1489,7 +1487,7 @@ const photoCollection = [
   },
   {
     id: 191,
-    title: "Music_Port_06",
+    title: "FAN - Herb",
     full: "/img/Mus_FAN_0110_W2_WebTag.jpg",
     thumb: "/img/thumb/Mus_FAN_0110_W2_WebTag.avif",
     category: ["digital", "color", "music"],
@@ -1500,7 +1498,7 @@ const photoCollection = [
     title: "Music_Port_07",
     full: "/img/Mus_Korveil_515_700tag.jpg",
     thumb: "/img/thumb/Mus_Korveil_515_700tag.avif",
-    category: ["digital", "color", "studio", "music"],
+    category: ["digital", "color", "music"],
     description: "Music Portrait",
   },
   {
@@ -1704,7 +1702,7 @@ const photoCollection = [
     description: "Glass Blower Story",
   },
   //
-  
+
   {
     id: 218,
     title: "GlassBlower_10",
@@ -2176,8 +2174,7 @@ const photoCollection = [
     thumb: "/img/thumb/CU_Tanya3.avif",
     category: ["digital", "color", "studio"],
     description: "Close Up Portrait",
-  }
-
+  },
 ];
 
 export default photoCollection;

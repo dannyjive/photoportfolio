@@ -57,27 +57,12 @@ export default function Gallery() {
         className="masonry-grid"
         columnClassName="masonry-grid_column"
       >
-        {/* {filteredPhotos.map((image, index) => (
-          <div
-            key={image.id}
-            className="masonry-item masonry-item-stagger"
-            onClick={() => openModal(index)}
-          >
-            <img
-              src={image.thumb}
-              className="thumbnail"
-              alt={image.description}
-              loading="lazy"
-            />
-          </div>
-        ))} */}
 
         {filteredPhotos.map((image, index) => (
           <div
             key={image.id}
-            className="masonry-item masonry-item-stagger" 
+            className="masonry-item masonry-item-stagger overlay-container" 
             onClick={() => openModal(index)}
-            // Calculate the staggered delay here: index * delay (e.g., 0.1s)
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <img
@@ -86,6 +71,18 @@ export default function Gallery() {
               alt={image.description}
               loading="lazy"
             />
+
+            {/* <--- ADD THE OVERLAY BAR HERE ---> */}
+            <div className="image-overlay-bar">
+                <p className="overlay-text-title">{image.title}</p>
+                <p className="overlay-categories overlay-text">
+                    {Array.isArray(image.category) 
+                        ? image.category.map(c => `#${c}`).join(' ') 
+                        : `#${image.category}`
+                    }</p>
+            </div>
+            {/* <--- END OVERLAY BAR ---> */}
+
           </div>
         ))}
       </Masonry>

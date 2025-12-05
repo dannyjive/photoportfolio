@@ -116,6 +116,52 @@ body {
   margin: 0 auto;
 }
 
+/* -----------------------------
+   Image Overlay Bar
+   ----------------------------- */
+
+.overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--brand-color);
+  padding: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(100%);
+  z-index: 10;
+}
+
+.overlay-text-title {
+  font-family: "Koulen", sans-serif;
+  font-weight: bold;
+    margin: 0;
+  font-size: 0.9rem;
+
+  text-align: left;
+}
+
+.image-overlay-bar .overlay-text,
+.image-overlay-bar .overlay-hashtags {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+}
+
+/* 4. Hover State: Show the bar when the container is hovered */
+.overlay-container:hover .image-overlay-bar {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Slide up to the bottom edge */
+}
+
 /* Remove borders/outlines */
 .modal-body,
 .modal-body img,
