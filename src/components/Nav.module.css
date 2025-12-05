@@ -123,7 +123,7 @@ ul li:not(.separator) {
   max-width: 40%;
   height: 8px;
   background-color: var(--brand-color);
-  transform: scaleX(0);      /* start collapsed */
+  transform: scaleX(0); 
 }
 
 

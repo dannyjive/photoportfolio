@@ -68,13 +68,13 @@ const Nav = () => {
   // Reset letters
   gsap.set(headlineLettersRef.current, { y: 20, opacity: 0 });
 
-  // Animate each letter upward
+  // Animate each Horizon line Headline character letter upward
   gsap.to(headlineLettersRef.current, {
     y: 0,
     opacity: 1,
-    duration: 0.6,
+    duration: 1,
     ease: "power3.out",
-    stagger: 0.05,
+    stagger: 0.08,
   });
 }, [filter]);
 
