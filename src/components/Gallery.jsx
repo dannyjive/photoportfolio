@@ -1,4 +1,4 @@
-// TODO: get images under 800kb
+
 import { useState, useEffect } from "react";
 import { useFilter } from "../context/FilterContext";
 import photoCollection from "../data";

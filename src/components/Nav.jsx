@@ -8,28 +8,28 @@ const Nav = () => {
   const location = useLocation();
   const { filter, setFilter } = useFilter();
 
-  // GSAP headline animation
+  // GSAP animations
   const lettersRef = useRef([]);
   const filtersRef = useRef([]);
   const headlineLinesRef = useRef([]);
   const headlineLettersRef = useRef([]);
   const headlineRef = useRef(null);
 
-  //Logo headline animation
+  //Logo title animation NOTE: Might be too much going on so I'm commenting out.
 
-  useEffect(() => {
-    // Reset text
-    gsap.set(headlineRef.current, { opacity: 0, y: 10 });
-
-    // Animate text in after lines
-    gsap.to(headlineRef.current, {
-      opacity: 1,
-      y: 0,
-      duration: 0.6,
-      ease: "power3.out",
-      delay: 0.2, // slightly after line animation starts
-    });
-  }, [filter]);
+  //  useEffect(() => {
+  //   gsap.fromTo(
+  //     lettersRef.current,
+  //     { x: 0, opacity: 0 },
+  //     {
+  //       x: 40,
+  //       opacity: 1,
+  //       duration: 0.6,
+  //       ease: "power3.out",
+  //       stagger: 0.03,
+  //     }
+  //   );
+  // }, []);
 
   const line1 = "DAN FINLEY";
   const line2 = "PHOTO";
@@ -59,10 +59,10 @@ const Nav = () => {
       ease: "power3.out",
       stagger: 0.15,
     });
-  }, [filter]); // <-- triggers every time filter changes
+  }, [filter]);
 
 
-  // Headline character anim
+  // Filter Headline between <hr/>'s anim
 
   useEffect(() => {
   // Reset letters
