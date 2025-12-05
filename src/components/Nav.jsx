@@ -12,20 +12,24 @@ const Nav = () => {
   const lettersRef = useRef([]);
   const filtersRef = useRef([]);
   const headlineLinesRef = useRef([]);
+  const headlineLettersRef = useRef([]);
+  const headlineRef = useRef(null);
+
+  //Logo headline animation
 
   useEffect(() => {
-    gsap.fromTo(
-      lettersRef.current,
-      { x: 0, opacity: 0 },
-      {
-        x: 40,
-        opacity: 1,
-        duration: 0.6,
-        ease: "power3.out",
-        stagger: 0.05,
-      }
-    );
-  }, []);
+    // Reset text
+    gsap.set(headlineRef.current, { opacity: 0, y: 10 });
+
+    // Animate text in after lines
+    gsap.to(headlineRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      ease: "power3.out",
+      delay: 0.2, // slightly after line animation starts
+    });
+  }, [filter]);
 
   const line1 = "DAN FINLEY";
   const line2 = "PHOTO";
@@ -42,10 +46,37 @@ const Nav = () => {
     });
   }, []);
 
+  //Horizon line animation
+
+  useEffect(() => {
+    // Reset lines first
+    gsap.set(headlineLinesRef.current, { scaleX: 0 });
+
+    // Animate lines outward
+    gsap.to(headlineLinesRef.current, {
+      scaleX: 1,
+      duration: 0.8,
+      ease: "power3.out",
+      stagger: 0.15,
+    });
+  }, [filter]); // <-- triggers every time filter changes
 
 
+  // Headline character anim
 
+  useEffect(() => {
+  // Reset letters
+  gsap.set(headlineLettersRef.current, { y: 20, opacity: 0 });
 
+  // Animate each letter upward
+  gsap.to(headlineLettersRef.current, {
+    y: 0,
+    opacity: 1,
+    duration: 0.6,
+    ease: "power3.out",
+    stagger: 0.05,
+  });
+}, [filter]);
 
 
   // Categories
@@ -178,18 +209,28 @@ const Nav = () => {
         </ul>
       </nav>
 
-
       <div className={styles.headlineContainer}>
-        <hr className={styles.headline} />
-        <h2>{headline}</h2>
-        <hr className={styles.headline} />
+        <div
+          className={`${styles.headlineLine} ${styles.left}`}
+          ref={(el) => (headlineLinesRef.current[0] = el)}
+        />
+        <h2 ref={headlineRef}>
+          {headline.split("").map((char, i) => (
+            <span
+              key={i}
+              ref={(el) => (headlineLettersRef.current[i] = el)}
+              style={{ display: "inline-block" }}
+            >
+              {char === " " ? "\u00A0" : char}
+            </span>
+          ))}
+        </h2>
+
+        <div
+          className={`${styles.headlineLine} ${styles.right}`}
+          ref={(el) => (headlineLinesRef.current[1] = el)}
+        />
       </div>
-
-
-
-
-
-
     </>
   );
 };
