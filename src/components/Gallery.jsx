@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useFilter } from "../context/FilterContext";
 import photoCollection from "../data";
@@ -58,11 +57,28 @@ export default function Gallery() {
         className="masonry-grid"
         columnClassName="masonry-grid_column"
       >
+        {/* {filteredPhotos.map((image, index) => (
+          <div
+            key={image.id}
+            className="masonry-item masonry-item-stagger"
+            onClick={() => openModal(index)}
+          >
+            <img
+              src={image.thumb}
+              className="thumbnail"
+              alt={image.description}
+              loading="lazy"
+            />
+          </div>
+        ))} */}
+
         {filteredPhotos.map((image, index) => (
           <div
             key={image.id}
-            className="masonry-item"
+            className="masonry-item masonry-item-stagger" 
             onClick={() => openModal(index)}
+            // Calculate the staggered delay here: index * delay (e.g., 0.1s)
+            style={{ animationDelay: `${index * 0.1}s` }}
           >
             <img
               src={image.thumb}
