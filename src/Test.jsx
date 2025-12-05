@@ -1,1 +1,0 @@
-This is a test of the new docker container to see if it syncs between mac and pc without issues.
