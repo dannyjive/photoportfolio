@@ -179,10 +179,10 @@ const Nav = () => {
       </nav>
 
 
-      <div className="headlineContainer">
-        <hr className="headline" />
+      <div className={styles.headlineContainer}>
+        <hr className={styles.headline} />
         <h2>{headline}</h2>
-        <hr className="headline" />
+        <hr className={styles.headline} />
       </div>
 
 
