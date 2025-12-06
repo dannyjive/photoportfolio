@@ -3,7 +3,7 @@
 const photoCollection = [
   {
     id: 1,
-    title: "Cast and Crew 3",
+    title: "Cast and Crew",
     full: "/img/Env_FullGroup_Web.avif",
     thumb: "/img/thumb/Env_FullGroup_Web.avif",
     category: ["digital", "color", "environmental"],
@@ -35,7 +35,7 @@ const photoCollection = [
   },
   {
     id: 5,
-    title: "Montse 1",
+    title: "Montse I",
     full: "/img/Env_Montse.avif",
     thumb: "/img/thumb/Env_Montse.avif",
     category: ["digital", "color", "environmental"],
@@ -43,7 +43,7 @@ const photoCollection = [
   },
   {
     id: 6,
-    title: "Montse 2",
+    title: "Montse II",
     full: "/img/Env_Montse2.avif",
     thumb: "/img/thumb/Env_Montse2.avif",
     category: ["digital", "color", "environmental"],
@@ -59,7 +59,7 @@ const photoCollection = [
   },
   {
     id: 8,
-    title: "Music_Port_17",
+    title: "The Sometimes Family",
     full: "/img/Mus_STFamily_1.avif",
     thumb: "/img/thumb/Mus_STFamily_1.avif",
     category: ["digital", "color", "music"],
@@ -67,15 +67,15 @@ const photoCollection = [
   },
   {
     id: 9,
-    title: "Crumpled Portrait 03",
+    title: "Maris",
     full: "/img/Crump_Maris-port_0083_WebTag.avif",
     thumb: "/img/thumb/Crump_Maris-port_0083_WebTag.avif",
-    category: ["digital", "b&w", "studio"],
+    category: ["film", "b&w", "studio"],
     description: "Crumpled Portrait",
   },
   {
     id: 10,
-    title: "MentorsGroup",
+    title: "Mentors Group",
     full: "/img/LF_MentorsGroup_Fin.jpg",
     thumb: "/img/thumb/LF_MentorsGroup_Fin.avif",
     category: ["film", "b&w", "studio", "4x5"],
@@ -83,7 +83,7 @@ const photoCollection = [
   },
   {
     id: 11,
-    title: "Music_Port_03",
+    title: "Selina II",
     full: "/img/Mus_Selina_0134_700tag.jpg",
     thumb: "/img/thumb/Mus_Selina_0134_700tag.avif",
     category: ["digital", "color", "music"],
@@ -101,7 +101,7 @@ const photoCollection = [
   },
   {
     id: 13,
-    title: "Chris Holmes",
+    title: "Chris I",
     full: "/img/Env_ChrisHolmes.jpg",
     thumb: "/img/thumb/Env_ChrisHolmes.avif",
     category: ["digital", "color", "environmental"],
@@ -109,7 +109,7 @@ const photoCollection = [
   },
   {
     id: 14,
-    title: "Chris Holmes 2",
+    title: "Chris II",
     full: "/img/Env_ChrisHolmes02.jpg",
     thumb: "/img/thumb/Env_ChrisHolmes02.avif",
     category: ["digital", "color", "environmental"],
@@ -133,7 +133,7 @@ const photoCollection = [
   },
   {
     id: 17,
-    title: "Cast and Crew",
+    title: "Cast and Crew II",
     full: "/img/Env_PatrickJerry_Web.jpg",
     thumb: "/img/thumb/Env_PatrickJerry_Web.avif",
     category: ["digital", "color", "environmental"],
@@ -141,7 +141,7 @@ const photoCollection = [
   },
   {
     id: 18,
-    title: "Cast and Crew 2",
+    title: "Cast and Crew III",
     full: "/img/Env_TimMargret_Web.jpg",
     thumb: "/img/thumb/Env_TimMargret_Web.avif",
     category: ["digital", "color", "environmental"],
@@ -295,7 +295,7 @@ const photoCollection = [
   },
   {
     id: 42,
-    title: "Plyne Christian & Kevin",
+    title: "Plyne, Christian & Kevin",
     full: "/img/LF_PlyneChristianKevin_Fin.avif",
     thumb: "/img/thumb/LF_PlyneChristianKevin_Fin.avif",
     category: ["film", "b&w", "studio", "4x5"],
@@ -319,7 +319,7 @@ const photoCollection = [
   },
   {
     id: 45,
-    title: "Bikes",
+    title: "Iceland Bikes",
     full: "/img/Land_bikes_W.avif",
     thumb: "/img/thumb/Land_bikes_W.avif",
     category: ["film", "b&w", "landscape", "4x5"],
@@ -327,7 +327,7 @@ const photoCollection = [
   },
   {
     id: 46,
-    title: "Fountain",
+    title: "Jacob Wrey Mould Fountain",
     full: "/img/Land_Fountain_W.avif",
     thumb: "/img/thumb/Land_Fountain_W.avif",
     category: ["film", "b&w", "landscape", "4x5"],
@@ -335,7 +335,7 @@ const photoCollection = [
   },
   {
     id: 47,
-    title: "Bridge",
+    title: "Kennedy to Koch Bridge",
     full: "/img/Land_BridgeView_Fin3.avif",
     thumb: "/img/thumb/Land_BridgeView_Fin3.avif",
     category: ["film", "b&w", "landscape", "4x5"],
@@ -343,7 +343,7 @@ const photoCollection = [
   },
   {
     id: 48,
-    title: "Pier",
+    title: "Pier 15",
     full: "/img/Land_Pier01_Fin.avif",
     thumb: "/img/thumb/Land_Pier01_Fin.avif",
     category: ["film", "b&w", "landscape", "4x5"],
@@ -375,7 +375,7 @@ const photoCollection = [
   },
   {
     id: 52,
-    title: "Pink Stairs",
+    title: "Cloisters",
     full: "/img/Land_PinkFlowers2_Fin.avif",
     thumb: "/img/thumb/Land_PinkFlowers2_Fin.avif",
     category: ["film", "color", "landscape", "4x5"],
@@ -407,7 +407,7 @@ const photoCollection = [
   },
   {
     id: 56,
-    title: "Greenhouse 3",
+    title: "Iceland Greenhouse I",
     full: "/img/Land_Greenhouse3_W.avif",
     thumb: "/img/thumb/Land_Greenhouse3_W.avif",
     category: ["film", "b&w", "landscape", "4x5"],
@@ -415,7 +415,7 @@ const photoCollection = [
   },
   {
     id: 57,
-    title: "Greenhouse 2",
+    title: "Iceland Greenhouse II",
     full: "/img/Land_Greenhouse02_W.avif",
     thumb: "/img/thumb/Land_Greenhouse02_W.avif",
     category: ["film", "b&w", "landscape", "4x5"],
@@ -431,7 +431,7 @@ const photoCollection = [
   },
   {
     id: 59,
-    title: "City 2",
+    title: "Central Park",
     full: "/img/Land_City2_W.avif",
     thumb: "/img/thumb/Land_City2_W.avif",
     category: ["film", "b&w", "landscape", "4x5"],
@@ -463,7 +463,7 @@ const photoCollection = [
   },
   {
     id: 63,
-    title: "Sean W",
+    title: "Sean W I",
     full: "/img/Cinema_Sean_W_01.avif",
     thumb: "/img/thumb/Cinema_Sean_W_01.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -471,7 +471,7 @@ const photoCollection = [
   },
   {
     id: 64,
-    title: "Sean W",
+    title: "Sean W II",
     full: "/img/Cinema_Sean_W_02.avif",
     thumb: "/img/thumb/Cinema_Sean_W_02.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -479,7 +479,7 @@ const photoCollection = [
   },
   {
     id: 65,
-    title: "Emily 1",
+    title: "Emily I",
     full: "/img/Cinema_Emily_Fin.avif",
     thumb: "/img/thumb/Cinema_Emily_Fin.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -487,7 +487,7 @@ const photoCollection = [
   },
   {
     id: 66,
-    title: "Emily 2",
+    title: "Emily II",
     full: "/img/Cinema_Emily02_Fin.avif",
     thumb: "/img/thumb/Cinema_Emily02_Fin.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -495,7 +495,7 @@ const photoCollection = [
   },
   {
     id: 67,
-    title: "Christian 1",
+    title: "Christian I",
     full: "/img/Cinema_Christian01_Fin.avif",
     thumb: "/img/thumb/Cinema_Christian01_Fin.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -503,7 +503,7 @@ const photoCollection = [
   },
   {
     id: 68,
-    title: "Christian 2",
+    title: "Christian II",
     full: "/img/Cinema_Christian02_W.avif",
     thumb: "/img/thumb/Cinema_Christian02_W.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -511,7 +511,7 @@ const photoCollection = [
   },
   {
     id: 69,
-    title: "Ajsean 1",
+    title: "Ajsean I",
     full: "/img/Cinema_Ajsean_Fin01.avif",
     thumb: "/img/thumb/Cinema_Ajsean_Fin01.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -519,7 +519,7 @@ const photoCollection = [
   },
   {
     id: 70,
-    title: "Ajsean 2",
+    title: "Ajsean II",
     full: "/img/Cinema_Ajsean_Fin02.avif",
     thumb: "/img/thumb/Cinema_Ajsean_Fin02.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -527,7 +527,7 @@ const photoCollection = [
   },
   {
     id: 71,
-    title: "Federico 1",
+    title: "Federico I",
     full: "/img/Cinema_Federico_W_01.avif",
     thumb: "/img/thumb/Cinema_Federico_W_01.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -535,7 +535,7 @@ const photoCollection = [
   },
   {
     id: 72,
-    title: "Federico 2",
+    title: "Federico II",
     full: "/img/Cinema_Federico_Fin_02.avif",
     thumb: "/img/thumb/Cinema_Federico_Fin_02.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -559,7 +559,7 @@ const photoCollection = [
   },
   {
     id: 75,
-    title: "Melody 1",
+    title: "Melody I",
     full: "/img/Env_Melody01_Fin.avif",
     thumb: "/img/thumb/Env_Melody01_Fin.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -567,7 +567,7 @@ const photoCollection = [
   },
   {
     id: 76,
-    title: "Melody 2",
+    title: "Melody II",
     full: "/img/Env_Melody02_Fin.avif",
     thumb: "/img/thumb/Env_Melody02_Fin.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -575,7 +575,7 @@ const photoCollection = [
   },
   {
     id: 77,
-    title: "Monica 1",
+    title: "Monica I",
     full: "/img/Cinema_Monica_W.avif",
     thumb: "/img/thumb/Cinema_Monica_W.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -583,7 +583,7 @@ const photoCollection = [
   },
   {
     id: 78,
-    title: "Monica 2",
+    title: "Monica II",
     full: "/img/Cinema_Monica2_Fin.avif",
     thumb: "/img/thumb/Cinema_Monica2_Fin.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -591,7 +591,7 @@ const photoCollection = [
   },
   {
     id: 79,
-    title: "Sean 1",
+    title: "Sean I",
     full: "/img/Cinema_Sean_01_Fin.avif",
     thumb: "/img/thumb/Cinema_Sean_01_Fin.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -599,7 +599,7 @@ const photoCollection = [
   },
   {
     id: 80,
-    title: "Sean 2",
+    title: "Sean II",
     full: "/img/Cinema_Sean_02_Fin-2.avif",
     thumb: "/img/thumb/Cinema_Sean_02_Fin-2.avif",
     category: ["digital", "color", "proj:cinematic"],
@@ -959,7 +959,7 @@ const photoCollection = [
   },
   {
     id: 125,
-    title: "Tryptic-01",
+    title: "Tryptic I",
     full: "/img/Abs_Tryptic.avif",
     thumb: "/img/thumb/Abs_Tryptic.avif",
     category: ["digital", "color", "abstract"],
@@ -967,7 +967,7 @@ const photoCollection = [
   },
   {
     id: 126,
-    title: "Tryptic-02",
+    title: "Tryptic II",
     full: "/img/Abs_Narrative02.avif",
     thumb: "/img/thumb/Abs_Narrative02.avif",
     category: ["digital", "color", "abstract"],
@@ -975,7 +975,7 @@ const photoCollection = [
   },
   {
     id: 127,
-    title: "Tryptic-03",
+    title: "Tryptic III",
     full: "/img/Abs_Narrative03.avif",
     thumb: "/img/thumb/Abs_Narrative03.avif",
     category: ["digital", "color", "abstract"],
@@ -983,7 +983,7 @@ const photoCollection = [
   },
   {
     id: 128,
-    title: "BeautyShot_02",
+    title: "BeautyShot_01",
     full: "/img/Beaut_DesantiBeauty_0130_Tag.jpg",
     thumb: "/img/thumb/Beaut_DesantiBeauty_0130_Tag.avif",
     category: ["digital", "color", "beauty", "studio"],
@@ -991,7 +991,7 @@ const photoCollection = [
   },
   {
     id: 129,
-    title: "BeautyShot_03",
+    title: "BeautyShot_02",
     full: "/img/Beaut_DesantiBeauty_0214_Tag.jpg",
     thumb: "/img/thumb/Beaut_DesantiBeauty_0214_Tag.avif",
     category: ["digital", "color", "beauty", "studio"],
@@ -999,7 +999,7 @@ const photoCollection = [
   },
   {
     id: 130,
-    title: "BeautyShot_04",
+    title: "BeautyShot_03",
     full: "/img/Beaut_DesantiBeauty_0301_Tag2.jpg",
     thumb: "/img/thumb/Beaut_DesantiBeauty_0301_Tag2.avif",
     category: ["digital", "color", "beauty", "studio"],
@@ -1007,7 +1007,7 @@ const photoCollection = [
   },
   {
     id: 131,
-    title: "BeautyShot_05",
+    title: "BeautyShot_04",
     full: "/img/Beaut_DesantiBeauty_0330_Tag.jpg",
     thumb: "/img/thumb/Beaut_DesantiBeauty_0330_Tag.avif",
     category: ["digital", "color", "beauty", "studio"],
@@ -1015,7 +1015,7 @@ const photoCollection = [
   },
   {
     id: 132,
-    title: "BeautyShot_06",
+    title: "BeautyShot_05",
     full: "/img/Beaut_DesantiBeauty_0390_Tag.jpg",
     thumb: "/img/thumb/Beaut_DesantiBeauty_0390_Tag.avif",
     category: ["digital", "color", "beauty", "studio"],
@@ -1023,7 +1023,7 @@ const photoCollection = [
   },
   {
     id: 133,
-    title: "BeautyShot_07",
+    title: "BeautyShot_06",
     full: "/img/Beaut_DesantiBeauty_0447_Tag.jpg",
     thumb: "/img/thumb/Beaut_DesantiBeauty_0447_Tag.avif",
     category: ["digital", "color", "beauty", "studio"],
@@ -1031,7 +1031,7 @@ const photoCollection = [
   },
   {
     id: 134,
-    title: "BeautyShot_01",
+    title: "BeautyShot_07",
     full: "/img/Beaut_DesantiBeauty_0077_Tag.jpg",
     thumb: "/img/thumb/Beaut_DesantiBeauty_0077_Tag.avif",
     category: ["digital", "color", "beauty", "studio"],
@@ -1447,7 +1447,7 @@ const photoCollection = [
   },
   {
     id: 186,
-    title: "Music_Port_02",
+    title: "Cache City",
     full: "/img/Mus_CacheCity.avif",
     thumb: "/img/thumb/Mus_CacheCity.avif",
     category: ["digital", "color", "music"],
@@ -1495,7 +1495,7 @@ const photoCollection = [
   },
   {
     id: 192,
-    title: "Music_Port_07",
+    title: "Korveil II",
     full: "/img/Mus_Korveil_515_700tag.jpg",
     thumb: "/img/thumb/Mus_Korveil_515_700tag.avif",
     category: ["digital", "color", "music"],
@@ -1503,7 +1503,7 @@ const photoCollection = [
   },
   {
     id: 193,
-    title: "Music_Port_08",
+    title: "Cherisa",
     full: "/img/Mus_CherisaFinal_Web.avif",
     thumb: "/img/thumb/Mus_CherisaFinal_Web.avif",
     category: ["digital", "color", "music"],
@@ -1511,7 +1511,7 @@ const photoCollection = [
   },
   {
     id: 194,
-    title: "Music_Port_09",
+    title: "Hannibal",
     full: "/img/Mus_Hannibal_564_Tag.jpg",
     thumb: "/img/thumb/Mus_Hannibal_564_Tag.avif",
     category: ["digital", "b&w", "music"],
@@ -1519,7 +1519,7 @@ const photoCollection = [
   },
   {
     id: 195,
-    title: "Music_Port_010",
+    title: "Ignacio",
     full: "/img/Mus_IgnacioPortrait---WebTag.jpg",
     thumb: "/img/thumb/Mus_IgnacioPortrait---WebTag.avif",
     category: ["digital", "color", "music"],
@@ -1527,7 +1527,7 @@ const photoCollection = [
   },
   {
     id: 196,
-    title: "Music_Port_11",
+    title: "Jaeno II",
     full: "/img/Mus_Jaeno_0091_Webtag.jpg",
     thumb: "/img/thumb/Mus_Jaeno_0091_Webtag.avif",
     category: ["digital", "color", "music"],
@@ -1535,7 +1535,7 @@ const photoCollection = [
   },
   {
     id: 197,
-    title: "Music_Port_12",
+    title: "Rayshawn I",
     full: "/img/Mus_Rayshawn-2863-Webtag.jpg",
     thumb: "/img/thumb/Mus_Rayshawn-2863-Webtag.avif",
     category: ["digital", "color", "music"],
@@ -1543,7 +1543,7 @@ const photoCollection = [
   },
   {
     id: 198,
-    title: "Music_Port_13",
+    title: "Rayshawn II",
     full: "/img/Mus_Rayshawn-2898---Webtag.jpg",
     thumb: "/img/thumb/Mus_Rayshawn-2898---Webtag.avif",
     category: ["digital", "color", "music"],
@@ -1551,7 +1551,7 @@ const photoCollection = [
   },
   {
     id: 199,
-    title: "Music_Port_14",
+    title: "TreZure",
     full: "/img/Mus_TreZure_2921-WebTag.jpg",
     thumb: "/img/thumb/Mus_TreZure_2921-WebTag.avif",
     category: ["digital", "color", "music"],
@@ -1559,7 +1559,7 @@ const photoCollection = [
   },
   {
     id: 200,
-    title: "Music_Port_15",
+    title: "Xodus I",
     full: "/img/Mus_Xodus_0224_Tag.jpg",
     thumb: "/img/thumb/Mus_Xodus_0224_Tag.avif",
     category: ["digital", "b&w", "music"],
@@ -1567,7 +1567,7 @@ const photoCollection = [
   },
   {
     id: 201,
-    title: "Music_Port_16",
+    title: "Xodus II",
     full: "/img/Mus_Xodus_0333_Fin-Tag.jpg",
     thumb: "/img/thumb/Mus_Xodus_0333_Fin-Tag.avif",
     category: ["digital", "b&w", "music"],
@@ -2100,7 +2100,7 @@ const photoCollection = [
     title: "Crumpled Portrait 01",
     full: "/img/Crump_Ariel_0076_1kTag.jpg",
     thumb: "/img/thumb/Crump_Ariel_0076_1kTag.avif",
-    category: ["digital", "b&w", "studio"],
+    category: ["film", "b&w", "studio"],
     description: "Crumpled Portrait",
   },
   {
@@ -2108,28 +2108,28 @@ const photoCollection = [
     title: "Crumpled Portrait 02",
     full: "/img/Crump_JC-port_0083_1kTag.jpg",
     thumb: "/img/thumb/Crump_JC-port_0083_1kTag.avif",
-    category: ["digital", "b&w", "studio"],
+    category: ["film", "b&w", "studio"],
     description: "Crumpled Portrait",
   },
   {
     id: 269,
-    title: "Crumpled Portrait 04",
+    title: "Crumpled Portrait 03",
     full: "/img/Crump_Mishelle_0034_Fin.avif",
     thumb: "/img/thumb/Crump_Mishelle_0034_Fin.avif",
-    category: ["digital", "b&w", "studio"],
+    category: ["film", "b&w", "studio"],
     description: "Crumpled Portrait",
   },
   {
     id: 270,
-    title: "Crumpled Portrait 05",
+    title: "Crumpled Portrait 04",
     full: "/img/Crump_RosiePortrait_0108_1kTag.jpg",
     thumb: "/img/thumb/Crump_RosiePortrait_0108_1kTag.avif",
-    category: ["digital", "b&w", "studio"],
+    category: ["film", "b&w", "studio"],
     description: "Crumpled Portrait",
   },
   {
     id: 271,
-    title: "Close Up Portrait 01",
+    title: "Close Up Portrait 05",
     full: "/img/Crump_RosiePortrait_0108_1kTag.jpg",
     thumb: "/img/thumb/Crump_RosiePortrait_0108_1kTag.avif",
     category: ["digital", "color", "studio"],
@@ -2137,7 +2137,7 @@ const photoCollection = [
   },
   {
     id: 272,
-    title: "Close Up Portrait 02",
+    title: "Close Up Portrait 06",
     full: "/img/CU_Caleb.jpg",
     thumb: "/img/thumb/CU_Caleb.avif",
     category: ["digital", "color", "studio"],
@@ -2145,7 +2145,7 @@ const photoCollection = [
   },
   {
     id: 273,
-    title: "Close Up Portrait 03",
+    title: "Close Up Portrait 07",
     full: "/img/CU_Felipe.jpg",
     thumb: "/img/thumb/CU_Felipe.avif",
     category: ["digital", "color", "studio"],
@@ -2153,7 +2153,7 @@ const photoCollection = [
   },
   {
     id: 274,
-    title: "Close Up Portrait 04",
+    title: "Close Up Portrait 08",
     full: "/img/CU_Mark.jpg",
     thumb: "/img/thumb/CU_Mark.avif",
     category: ["digital", "color", "studio"],
@@ -2161,7 +2161,7 @@ const photoCollection = [
   },
   {
     id: 275,
-    title: "Close Up Portrait 05",
+    title: "Close Up Portrait 09",
     full: "/img/CU_Sam.jpg",
     thumb: "/img/thumb/CU_Sam.avif",
     category: ["digital", "color", "studio"],
@@ -2169,7 +2169,7 @@ const photoCollection = [
   },
   {
     id: 276,
-    title: "Close Up Portrait 06",
+    title: "Close Up Portrait 10",
     full: "/img/CU_Tanya3.jpg",
     thumb: "/img/thumb/CU_Tanya3.avif",
     category: ["digital", "color", "studio"],
