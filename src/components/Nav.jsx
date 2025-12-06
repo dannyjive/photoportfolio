@@ -15,21 +15,21 @@ const Nav = () => {
   const headlineLettersRef = useRef([]);
   const headlineRef = useRef(null);
 
-  //Logo title animation NOTE: Might be too much going on so I'm commenting out.
+  //Logo title animation
 
-  //  useEffect(() => {
-  //   gsap.fromTo(
-  //     lettersRef.current,
-  //     { x: 0, opacity: 0 },
-  //     {
-  //       x: 40,
-  //       opacity: 1,
-  //       duration: 0.6,
-  //       ease: "power3.out",
-  //       stagger: 0.03,
-  //     }
-  //   );
-  // }, []);
+   useEffect(() => {
+    gsap.fromTo(
+      lettersRef.current,
+      { x: 0, opacity: 0 },
+      {
+        x: 40,
+        opacity: 1,
+        duration: 0.6,
+        ease: "power3.out",
+        stagger: 0.03,
+      }
+    );
+  }, []);
 
   const line1 = "DAN FINLEY";
   const line2 = "PHOTO";
@@ -118,7 +118,7 @@ const Nav = () => {
   return (
     <>
       <nav className={styles.nav}>
-        {/* HEADLINE */}
+        {/* LOGO */}
         <h1 className={styles.h1}>
           <Link to="/" onClick={() => setFilter("all")}>
             {/* Line 1 */}
