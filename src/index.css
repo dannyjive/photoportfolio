@@ -20,6 +20,10 @@ body {
   min-height: 100%;
 }
 
+body.modal-open .gallery-wrapper {
+  pointer-events: none;
+}
+
 /* -----------------------------
    Masonry Grid
    ----------------------------- */
@@ -35,9 +39,25 @@ body {
   background-clip: padding-box;
 }
 
+/* .masonry-item {
+  cursor: pointer;
+  } */
+
 .masonry-item {
   margin-bottom: var(--gutter);
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: left;
   cursor: pointer;
+}
+
+.masonry-item img.thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .masonry-item img {
@@ -141,7 +161,7 @@ body {
 
 .overlay-text-title {
   font-family: "Koulen", sans-serif;
-  
+
   margin: 0;
   font-size: 1rem;
 
@@ -202,7 +222,7 @@ ul {
 /* Footer */
 .footerText {
   color: var(--brand-color);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 /* -----------------------------

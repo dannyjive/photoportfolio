@@ -92,11 +92,23 @@ ul li:not(.separator) {
   padding-bottom: 0.4px;
 }
 
+.mask:focus-within {
+  overflow: visible;
+}
+
 .filterLink {
   display: inline-block;
   transform: translateY(100%);
   opacity: 0;
 }
+
+.filterLink:focus-visible,
+h1 a:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
 
 /* -----------------------------
    Headline / Filter
