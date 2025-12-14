@@ -67,6 +67,11 @@ export default function Gallery() {
         setActiveIndex((prev) =>
           prev === 0 ? filteredPhotos.length - 1 : prev - 1
         );
+      } else if (e.key === " " || e.key === "Spacebar") {
+        e.preventDefault();
+        setShowModal(false);
+      } else if (e.key === "Escape") {
+        setShowModal(false);
       }
     };
 
