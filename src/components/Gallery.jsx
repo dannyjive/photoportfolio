@@ -157,6 +157,9 @@ export default function Gallery() {
         <Modal
           show={showModal}
           onHide={() => setShowModal(false)}
+          onShow={() => {
+            document.querySelector(".carousel")?.focus();
+          }}
           onExited={() => {
             // specific focus logic: check if the element exists, then focus
             if (itemsRef.current[activeIndex]) {

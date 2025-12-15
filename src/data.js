@@ -1,4 +1,4 @@
-// TODO: must add description per photo
+
 
 const photoCollection = [
   {
