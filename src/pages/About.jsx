@@ -3,7 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Footer from "../components/Footer";
 import styles from "./About.module.css";
 
+const BASE = process.env.PUBLIC_URL;
+
 export default function About() {
+
+
   return (
     <>
       {/* About Section */}
@@ -13,7 +17,7 @@ export default function About() {
             {/* Portrait */}
             <Col md={4} className="text-center mb-3 mb-md-0">
               <Image
-                src="/img/About_dan_finley_portrait.jpg"
+                src={`${BASE}/img/About_dan_finley_portrait.jpg`}
                 alt="Dan Finley Portrait"
                 fluid
               />
@@ -161,7 +165,7 @@ export default function About() {
             <Col sm={5} className="d-flex justify-content-center mb-3">
               <Figure>
                 <Figure.Image
-                  src="/img/About_LFcamera.jpg"
+                  src={`${BASE}/img/About_LFcamera.jpg`}
                   alt="large format camera"
                   fluid
                   rounded
@@ -175,7 +179,7 @@ export default function About() {
             <Col sm={5} className="d-flex justify-content-center mb-3">
               <Figure>
                 <Figure.Image
-                  src="/img/About_HP5Film.jpg"
+                  src={`${BASE}/img/About_HP5Film.jpg`}
                   alt="Ilford HP5 Film"
                   fluid
                   rounded

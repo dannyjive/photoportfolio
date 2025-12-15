@@ -123,34 +123,6 @@ export default function Gallery() {
               </div>
             </button>
           );
-          // <div
-          //   key={image.id}
-          //   className="masonry-item masonry-item-stagger overlay-container"
-          //   onClick={() => openModal(index)}
-          //   tabIndex={0}
-          //   onKeyDown={(e) => {
-          //     if (e.key === "Enter" || e.key === " ") openModal(index);
-          //   }}
-          //   style={{ animationDelay: `${index * 0.1}s` }}
-          // >
-          //   <img
-          //     src={image.thumb}
-          //     className="thumbnail"
-          //     alt={image.alt}
-          //     loading="lazy"
-          //   />
-
-          //   {/* <--- ADD THE OVERLAY BAR HERE ---> */}
-          //   <div className="image-overlay-bar">
-          //     <p className="overlay-text-title">{image.title}</p>
-          //     <p className="overlay-categories overlay-text">
-          //       {Array.isArray(image.category)
-          //         ? image.category.map((c) => `#${c}`).join(" ")
-          //         : `#${image.category}`}
-          //     </p>
-          //   </div>
-          //   {/* <--- END OVERLAY BAR ---> */}
-          // </div>
         })}
       </Masonry>
       {showModal && (
