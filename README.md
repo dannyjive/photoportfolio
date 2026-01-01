@@ -66,7 +66,10 @@ Dark mode using Context
 👤 Author
 
 Dan Finley
+
 Designer, developer, and storyteller
+
 Portfolio: https://danfinleydesigns.com
+
 GitHub: https://github.com/dannyjive
 
