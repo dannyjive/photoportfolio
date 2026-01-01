@@ -38,10 +38,15 @@ Example: https://dan-finley.com/photo
 
 src/
 ├── components/ # Reusable UI components
+
 ├── context/ # Global state management
+
 ├── data/ # Image and gallery data
+
 ├── pages/ # Page-level components
+
 ├── styles/ # Custom styles
+
 └── App.js
 
 
